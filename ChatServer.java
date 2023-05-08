@@ -81,7 +81,7 @@ public class ChatServer {
                     }
                     synchronized (clients) {
                         for (PrintWriter client : clients) {
-                            client.println("MESSAGE " + name + ": " + input);
+                            client.println("MESSAGE [" + name + "]: " + input);
                         }
                     }
                 }
